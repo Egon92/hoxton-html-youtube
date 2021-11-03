@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: solid black 1px;
+}
+.youtube-container{
+    display: grid;
+    grid-template:
+    "youtube-guider-bar youtube-top-bar" 20px
+    "youtube-guider-bar youtube-chips-bar" 20px
+    "youtube-guider-bar youtube-main" 1fr/
+     20px               1fr;
+     grid-gap: 5px;
+      width: 100vw;
+}
+.youtube-top-bar img,
+.youtube-chips-bar img,
+.youtube-guider-bar img{
+    height: 20px;
+    width: 20px;
+}
+.youtube-guider-bar{
+    grid-area: youtube-guider-bar;
+}
+.youtube-top-bar{
+    grid-area: youtube-top-bar;
+}
+.youtube-chips-bar{
+    grid-area: youtube-chips-bar ;
+}
+.youtube-main{
+    grid-area: youtube-main;
+}
+
+
+
+
+.youtube-top-bar{
+    display: grid;
+    
+    grid-template-columns: auto 1fr auto;
+    
+    
+    
+}
+
+
+
+
+.youtube-chips-bar{
+    padding: 10px;
+   
+    list-style: none;
+}
+
+
+.youtube-chips-bar li{
+    height: 100%;
+    float: left;
+    margin: 10px;
+    
+}
+.youtube-chips-bar li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+
+
+
+.youtube-guider-bar{
+    padding: 10px;
+    list-style: none;
+}
+.youtube-guider-bar li{
+    width: 100%;
+    margin: 10px;
+}
+.youtube-guider-bar li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.youtube-main{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    height: 100vh;
+}
+.youtube-main-start {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+.youtube-main-end{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
