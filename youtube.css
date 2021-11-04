@@ -2,15 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
+   /* outline: solid black 1px; */
 }
 .youtube-container{
   display: grid;
   grid-template:
   "youtube-guider-bar youtube-top-bar" 50px
-  "youtube-guider-bar youtube-chips-bar" 20px
+  "youtube-guider-bar youtube-chips-bar" 60px
   "youtube-guider-bar youtube-main" 1fr/
-  60px               1fr;
+  60px                1fr;
   grid-gap: 5px;
   width: 100vw;
 }
@@ -21,10 +21,10 @@
 .youtube-guider-bar{
   grid-area: youtube-guider-bar;
 }
-/* .youtube-chips-bar{
+.youtube-chips-bar{
   grid-area: youtube-chips-bar ;
 }
-.youtube-main{
+/* .youtube-main{
   grid-area: youtube-main;
 } */
 
@@ -32,6 +32,8 @@
 
 hr{
   height: 1px;
+ 
+  
 }
 
 
@@ -46,6 +48,7 @@ hr{
   .youtube-top-bar-start {
     justify-items: start;
     width: 100%;
+    margin-left: 1rem;
   }
   .youtube-top-bar-start img {
     width: 100px;
@@ -90,26 +93,22 @@ hr{
 
 
 
-
-  .youtube-guider-bar{
-  width: 70px;
-  /* padding: 10px 0; */
-  list-style: none;
- /* justify-content: center; */
+.youtube-guider-bar{
+width: 70px;
+/* padding: 10px 0; */
+list-style: none;
+/* justify-content: center; */
 }
-.youtube-guider-bar li{
-  width: 100%;
-  list-style: none;
-  /* justify-content: center; */
+.youtube-guider-bar li{width: 100%;list-style: none;/* justify-content: center; */
 }
 .youtube-guider-bar li a{
-  padding: 8px 0;
-  width: 100%;
-  display: grid;
-  text-decoration: none;
-  grid-template-rows: repeat(3,auto);
-  gap: 10px;
-  justify-items: center;
+padding: 8px 0;
+width: 100%;
+display: grid;
+text-decoration: none;
+grid-template-rows: repeat(3,auto);
+gap: 10px;
+justify-items: center;
 }
 .youtube-guider-bar div{
 width: 100%;
@@ -122,10 +121,14 @@ text-align: center;
 .youtube-guider-bar svg{
 justify-content: center;
 }
-.youtube-guider-bar a:hover{
-  background-color: #e9ecef;
+.youtube-guider-bar .home:hover,
+.youtube-guider-bar .explore:hover
+.youtube-guider-bar .subscriptions:hover
+.youtube-guider-bar .library:hover
+.youtube-guider-bar .history:hover{
+background-color: #e9ecef;
+font-family: sans-serif;
 }
-
 
 
 
@@ -136,35 +139,36 @@ justify-content: center;
 
 
 .youtube-chips-bar{
-    padding: 10px;
-   
-    list-style: none;
+  /* width: 1fr; */
+  overflow: scroll;
+  height: 60px;
+  border-top: solid #adb5bd 1px;
 }
-.youtube-chips-bar li{
-    height: 100%;
-    float: left;
-    margin: 10px;
-    
+.youtube-chips-bar ul{
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  padding: 0.5rem;
+  justify-content: start;
 }
-.youtube-chips-bar li a{
-    display: block;
-    text-decoration: none;
-    padding: 5px;
-    
+.youtube-chips-bar a{
+  min-width: max-content;
+  width: 100%;
+  text-decoration:none; 
+  text-align: center;
+  color: black;
+  background-color:#e9ecef;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 30px;
+  padding: 0.3rem;
+  border: rgba(0, 0, 0, 0.2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.youtube-chips-bar a:hover{
+  background-color: whitesmoke;
+  border: solid black 1px;
+}
 
 
 
