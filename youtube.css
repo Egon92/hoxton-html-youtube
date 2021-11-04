@@ -14,36 +14,136 @@
      grid-gap: 5px;
       width: 100vw;
 }
-.youtube-top-bar img,
-.youtube-chips-bar img,
-.youtube-guider-bar img{
-    height: 20px;
-    width: 20px;
-}
-.youtube-guider-bar{
+/* .youtube-guider-bar{
     grid-area: youtube-guider-bar;
-}
+} */
 .youtube-top-bar{
     grid-area: youtube-top-bar;
 }
-.youtube-chips-bar{
+/* .youtube-chips-bar{
     grid-area: youtube-chips-bar ;
 }
 .youtube-main{
     grid-area: youtube-main;
-}
+} */
 
 
 
 
-.youtube-top-bar{
+
+
+
+.youtube-top-bar {
+    width: 100%;
     display: grid;
-    
-    grid-template-columns: auto 1fr auto;
-    
-    
-    
+    grid-template-columns: auto 1fr 300px;
+    justify-items: center;
+    padding: 10px 0;
+  }
+  .youtube-top-bar-start {
+    justify-items: start;
+    width: 100%;
+  }
+  .youtube-top-bar-start img {
+    width: 100px;
+  }
+  .youtube-top-bar-center {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 50px);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+  }
+  input {
+    height: 100%;
+    width: 550px;
+    font-size: 1rem;
+  }
+  button img {
+    height: 20px;
+  }
+  .microphone {
+    padding: 3px;
+    width: 40px;
+  }
+  .youtube-top-bar-end {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    gap: 25px;
+    justify-content: end;
+    align-content: end;
+  }
+
+  .upload,
+  .notifications,
+  .apps,
+  .profile {
+    height: 20px;
+    margin-left: 1rem;
+    border-radius: 50px;
+  }
+  .youtube-top-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 300px;
+    justify-items: center;
+    padding: 10px 0;
 }
+  .youtube-top-bar-start {
+    justify-items: start;
+    width: 100%;
+}
+  .youtube-top-bar-start img {
+    width: 100px;
+}
+  .youtube-top-bar-center {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 50px);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+}
+  input {
+    height: 100%;
+    width: 550px;
+    font-size: 1rem;
+}
+  button img {
+    height: 20px;
+}
+  .microphone {
+    padding: 3px;
+    width: 40px;
+}
+  .youtube-top-bar-end {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    gap: 25px;
+    justify-content: end;
+    align-content: end;
+}
+
+  .upload,
+  .notifications,
+  .apps,
+  .profile {
+    height: 20px;
+    margin-left: 1rem;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
