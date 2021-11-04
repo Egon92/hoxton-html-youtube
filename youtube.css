@@ -2,38 +2,41 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: solid black 1px;
+   
 }
 .youtube-container{
-    display: grid;
-    grid-template:
-    "youtube-guider-bar youtube-top-bar" 20px
-    "youtube-guider-bar youtube-chips-bar" 20px
-    "youtube-guider-bar youtube-main" 1fr/
-     20px               1fr;
-     grid-gap: 5px;
-      width: 100vw;
+  display: grid;
+  grid-template:
+  "youtube-guider-bar youtube-top-bar" 50px
+  "youtube-guider-bar youtube-chips-bar" 20px
+  "youtube-guider-bar youtube-main" 1fr/
+  60px               1fr;
+  grid-gap: 5px;
+  width: 100vw;
 }
-/* .youtube-guider-bar{
-    grid-area: youtube-guider-bar;
-} */
+
 .youtube-top-bar{
-    grid-area: youtube-top-bar;
+  grid-area: youtube-top-bar;
+}
+.youtube-guider-bar{
+  grid-area: youtube-guider-bar;
 }
 /* .youtube-chips-bar{
-    grid-area: youtube-chips-bar ;
+  grid-area: youtube-chips-bar ;
 }
 .youtube-main{
-    grid-area: youtube-main;
+  grid-area: youtube-main;
 } */
 
 
 
+hr{
+  height: 1px;
+}
 
 
 
-
-.youtube-top-bar {
+ .youtube-top-bar {
     width: 100%;
     display: grid;
     grid-template-columns: auto 1fr 300px;
@@ -74,7 +77,6 @@
     justify-content: end;
     align-content: end;
   }
-
   .upload,
   .notifications,
   .apps,
@@ -83,61 +85,46 @@
     margin-left: 1rem;
     border-radius: 50px;
   }
-  .youtube-top-bar {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr 300px;
-    justify-items: center;
-    padding: 10px 0;
-}
-  .youtube-top-bar-start {
-    justify-items: start;
-    width: 100%;
-}
-  .youtube-top-bar-start img {
-    width: 100px;
-}
-  .youtube-top-bar-center {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 50px);
-    gap: 10px;
-    justify-content: center;
-    align-content: center;
-    height: 30px;
-}
-  input {
-    height: 100%;
-    width: 550px;
-    font-size: 1rem;
-}
-  button img {
-    height: 20px;
-}
-  .microphone {
-    padding: 3px;
-    width: 40px;
-}
-  .youtube-top-bar-end {
-    display: grid;
-    grid-template-columns: repeat(4, 30px);
-    gap: 25px;
-    justify-content: end;
-    align-content: end;
-}
-
-  .upload,
-  .notifications,
-  .apps,
-  .profile {
-    height: 20px;
-    margin-left: 1rem;
-    border-radius: 50px;
-}
 
 
 
 
 
+
+  .youtube-guider-bar{
+  width: 70px;
+  /* padding: 10px 0; */
+  list-style: none;
+ /* justify-content: center; */
+}
+.youtube-guider-bar li{
+  width: 100%;
+  list-style: none;
+  /* justify-content: center; */
+}
+.youtube-guider-bar li a{
+  padding: 8px 0;
+  width: 100%;
+  display: grid;
+  text-decoration: none;
+  grid-template-rows: repeat(3,auto);
+  gap: 10px;
+  justify-items: center;
+}
+.youtube-guider-bar div{
+width: 100%;
+font-size: 0.6rem;
+font-family: sans-serif;
+font-weight: bold;
+color: black;
+text-align: center;
+}
+.youtube-guider-bar svg{
+justify-content: center;
+}
+.youtube-guider-bar a:hover{
+  background-color: #e9ecef;
+}
 
 
 
@@ -153,8 +140,6 @@
    
     list-style: none;
 }
-
-
 .youtube-chips-bar li{
     height: 100%;
     float: left;
@@ -170,19 +155,21 @@
 
 
 
-.youtube-guider-bar{
-    padding: 10px;
-    list-style: none;
-}
-.youtube-guider-bar li{
-    width: 100%;
-    margin: 10px;
-}
-.youtube-guider-bar li a{
-    display: block;
-    text-decoration: none;
-    padding: 5px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .youtube-main{
     display: grid;
