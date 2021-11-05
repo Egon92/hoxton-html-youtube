@@ -24,9 +24,9 @@
 .youtube-chips-bar{
   grid-area: youtube-chips-bar ;
 }
-/* .youtube-main{
+.youtube-main{
   grid-area: youtube-main;
-} */
+}
 
 
 
@@ -44,11 +44,14 @@ hr{
     grid-template-columns: auto 1fr 300px;
     justify-items: center;
     padding: 10px 0;
+    margin-left: 5px;
+    background-color: #dce1e9 ;
   }
   .youtube-top-bar-start {
     justify-items: start;
     width: 100%;
     margin-left: 1rem;
+    padding-top: 4px;
   }
   .youtube-top-bar-start img {
     width: 100px;
@@ -62,16 +65,23 @@ hr{
     height: 30px;
   }
   input {
+
     height: 100%;
     width: 550px;
     font-size: 1rem;
+    padding-left: 1rem;
   }
   button img {
     height: 20px;
   }
   .microphone {
-    padding: 3px;
+    padding-top: 4px;
     width: 40px;
+    
+  }
+  .microphone:hover{
+    border: solid black 1px;
+    border-radius: 100%;
   }
   .youtube-top-bar-end {
     display: grid;
@@ -79,6 +89,7 @@ hr{
     gap: 25px;
     justify-content: end;
     align-content: end;
+    padding-top: 4px;
   }
   .upload,
   .notifications,
@@ -88,7 +99,13 @@ hr{
     margin-left: 1rem;
     border-radius: 50px;
   }
-
+  .upload:hover,
+  .notifications:hover,
+  .apps:hover,
+  .profile:hover{
+    border: solid black 1px;
+    border-radius: 100%;
+  }
 
 
 
@@ -98,6 +115,8 @@ width: 70px;
 /* padding: 10px 0; */
 list-style: none;
 /* justify-content: center; */
+background-color: #dce1e9;
+
 }
 .youtube-guider-bar li{width: 100%;list-style: none;/* justify-content: center; */
 }
@@ -122,9 +141,9 @@ text-align: center;
 justify-content: center;
 }
 .youtube-guider-bar .home:hover,
-.youtube-guider-bar .explore:hover
-.youtube-guider-bar .subscriptions:hover
-.youtube-guider-bar .library:hover
+.youtube-guider-bar .explore:hover,
+.youtube-guider-bar .subscriptions:hover,
+.youtube-guider-bar .library:hover,
 .youtube-guider-bar .history:hover{
 background-color: #e9ecef;
 font-family: sans-serif;
@@ -143,6 +162,8 @@ font-family: sans-serif;
   overflow: scroll;
   height: 60px;
   border-top: solid #adb5bd 1px;
+  margin-left: 5px;
+  background-color: #dce1e9;
 }
 .youtube-chips-bar ul{
   list-style: none;
@@ -176,15 +197,1117 @@ font-family: sans-serif;
 
 
 .youtube-main{
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    height: 100vh;
+  display: grid;
+  grid-template-rows: 400px auto;
+  justify-content: start;
+  align-content: center;
+  width:auto;
+  margin-left: 5px;
+  padding: 1rem 2rem;
+  gap: 50px;
+  background-color: #dce1e9;
 }
 .youtube-main-start {
-    display: grid;
-    grid-template-columns: repeat(4,auto);
+  display: grid;
+  grid-template: 
+  "youtube-main-start-item1 youtube-main-start-item2 youtube-main-start-item3 youtube-main-start-item4" 200px
+  "youtube-main-start-item5 youtube-main-start-item6 youtube-main-start-item7 youtube-main-start-item8" 200px/
+   250px 250px 250px 250px;
+  gap: 15px;
+  min-width: max-content;
+  justify-content: space-evenly;
 }
-.youtube-main-end{
-    display: grid;
-    grid-template-columns: repeat(4,auto);
+.youtube-main-start-item1{
+  grid-area: youtube-main-start-item1;
 }
+.youtube-main-start-item1 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item1-h5" 50px
+    "NBC-logo youtube-main-start-item1-span1" 18px
+    "NBC-logo youtube-main-start-item1-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item1-h5 {
+  grid-area: youtube-main-start-item1-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item1-span1 {
+  grid-area: youtube-main-start-item1-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item1-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item1-span2 {
+  grid-area: youtube-main-start-item1-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+.youtube-main-start-item2{
+  grid-area: youtube-main-start-item2;
+}
+.youtube-main-start-item2 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item2-h5" 50px
+    "NBC-logo youtube-main-start-item2-span1" 18px
+    "NBC-logo youtube-main-start-item2-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+    gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item2-h5 {
+  grid-area: youtube-main-start-item2-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item2-span1 {
+  grid-area: youtube-main-start-item2-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item2-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item2-span2 {
+  grid-area: youtube-main-start-item2-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-start-item3{
+  grid-area: youtube-main-start-item3;
+}
+.youtube-main-start-item3 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item3-h5" 50px
+    "NBC-logo youtube-main-start-item3-span1" 18px
+    "NBC-logo youtube-main-start-item3-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+    gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item3-h5 {
+  grid-area: youtube-main-start-item3-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item3-span1 {
+  grid-area: youtube-main-start-item3-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item3-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item3-span2 {
+  grid-area: youtube-main-start-item3-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-start-item4{
+  grid-area: youtube-main-start-item4;
+}
+.youtube-main-start-item4 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item4-h5" 50px
+    "NBC-logo youtube-main-start-item4-span1" 18px
+    "NBC-logo youtube-main-start-item4-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+    gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item4-h5 {
+  grid-area: youtube-main-start-item4-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item4-span1 {
+  grid-area: youtube-main-start-item4-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item4-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item4-span2 {
+  grid-area: youtube-main-start-item4-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+.youtube-main-start-item5{
+  grid-area: youtube-main-start-item5;
+}
+.youtube-main-start-item5 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item5-h5" 50px
+    "NBC-logo youtube-main-start-item5-span1" 18px
+    "NBC-logo youtube-main-start-item5-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+    gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item5-h5 {
+  grid-area: youtube-main-start-item5-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item5-span1 {
+  grid-area: youtube-main-start-item5-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item5-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item5-span2 {
+  grid-area: youtube-main-start-item5-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-start-item6{
+  grid-area: youtube-main-start-item6;
+}
+.youtube-main-start-item6 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item6-h5" 50px
+    "NBC-logo youtube-main-start-item6-span1" 18px
+    "NBC-logo youtube-main-start-item6-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+    gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item6-h5 {
+  grid-area: youtube-main-start-item6-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item6-span1 {
+  grid-area: youtube-main-start-item6-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item6-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item6-span2 {
+  grid-area: youtube-main-start-item6-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-start-item7{
+  grid-area: youtube-main-start-item7;
+}
+.youtube-main-start-item7 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item7-h5" 50px
+    "NBC-logo youtube-main-start-item7-span1" 18px
+    "NBC-logo youtube-main-start-item7-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+    gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item7-h5 {
+  grid-area: youtube-main-start-item7-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item7-span1 {
+  grid-area: youtube-main-start-item7-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item7-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item7-span2 {
+  grid-area: youtube-main-start-item7-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-start-item8{
+  grid-area: youtube-main-start-item8;
+}
+.youtube-main-start-item8 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-start-item8-h5" 50px
+    "NBC-logo youtube-main-start-item8-span1" 18px
+    "NBC-logo youtube-main-start-item8-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+    gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-start-item8-h5 {
+  grid-area: youtube-main-start-item8-h5;
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-start-item8-span1 {
+  grid-area: youtube-main-start-item8-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-start-item8-span1 svg {
+  height: 100%;
+}
+.youtube-main-start-item8-span2 {
+  grid-area: youtube-main-start-item8-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-end {
+  display: grid;
+  grid-template: 
+  "youtube-main-end-item1 youtube-main-end-item2 youtube-main-end-item3 youtube-main-end-item4" 200px
+  "youtube-main-end-item5 youtube-main-end-item6 youtube-main-end-item7 youtube-main-end-item8" 200px/
+   250px 250px 250px 250px;
+  gap: 15px;
+  min-width: max-content;
+  justify-content: space-evenly;
+}
+
+
+
+.youtube-main-end-item1{
+  grid-area: youtube-main-end-item1;
+}
+.youtube-main-end-item1 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item1-h5" 50px
+    "NBC-logo youtube-main-end-item1-span1" 18px
+    "NBC-logo youtube-main-end-item1-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item1-h5 {
+  grid-area: youtube-main-end-item1-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item1-span1 {
+  grid-area: youtube-main-end-item1-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item1-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item1-span2 {
+  grid-area: youtube-main-end-item1-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+.youtube-main-end-item2{
+  grid-area: youtube-main-end-item2;
+}
+.youtube-main-end-item2 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item2-h5" 50px
+    "NBC-logo youtube-main-end-item2-span1" 18px
+    "NBC-logo youtube-main-end-item2-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item2-h5 {
+  grid-area: youtube-main-end-item2-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item2-span1 {
+  grid-area: youtube-main-end-item2-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item2-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item2-span2 {
+  grid-area: youtube-main-end-item2-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+.youtube-main-end-item3{
+  grid-area: youtube-main-end-item3;
+}
+.youtube-main-end-item3 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item3-h5" 50px
+    "NBC-logo youtube-main-end-item3-span1" 18px
+    "NBC-logo youtube-main-end-item3-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item3-h5 {
+  grid-area: youtube-main-end-item3-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item3-span1 {
+  grid-area: youtube-main-end-item3-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item3-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item3-span2 {
+  grid-area: youtube-main-end-item3-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+.youtube-main-end-item4{
+  grid-area: youtube-main-end-item4;
+}
+.youtube-main-end-item4 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item4-h5" 50px
+    "NBC-logo youtube-main-end-item4-span1" 18px
+    "NBC-logo youtube-main-end-item4-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item4-h5 {
+  grid-area: youtube-main-end-item4-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item4-span1 {
+  grid-area: youtube-main-end-item4-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item4-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item4-span2 {
+  grid-area: youtube-main-end-item4-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+.youtube-main-end-item5{
+  grid-area: youtube-main-end-item5;
+}
+.youtube-main-end-item5 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item5-h5" 50px
+    "NBC-logo youtube-main-end-item5-span1" 18px
+    "NBC-logo youtube-main-end-item5-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item5-h5 {
+  grid-area: youtube-main-end-item5-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item5-span1 {
+  grid-area: youtube-main-end-item5-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item5-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item5-span2 {
+  grid-area: youtube-main-end-item5-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+.youtube-main-end-item6{
+  grid-area: youtube-main-end-item6;
+}
+.youtube-main-end-item6 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item6-h5" 50px
+    "NBC-logo youtube-main-end-item6-span1" 18px
+    "NBC-logo youtube-main-end-item6-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item6-h5 {
+  grid-area: youtube-main-end-item6-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item6-span1 {
+  grid-area: youtube-main-end-item6-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item6-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item6-span2 {
+  grid-area: youtube-main-end-item6-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-end-item7{
+  grid-area: youtube-main-end-item7;
+}
+.youtube-main-end-item7 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item7-h5" 50px
+    "NBC-logo youtube-main-end-item7-span1" 18px
+    "NBC-logo youtube-main-end-item7-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item7-h5 {
+  grid-area: youtube-main-end-item7-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item7-span1 {
+  grid-area: youtube-main-end-item7-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item7-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item7-span2 {
+  grid-area: youtube-main-end-item7-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.youtube-main-end-item8{
+  grid-area: youtube-main-end-item8;
+}
+.youtube-main-end-item8 {
+  display: grid;
+  grid-template:
+    "Biden    Biden" 110px
+    "NBC-logo youtube-main-end-item8-h5" 50px
+    "NBC-logo youtube-main-end-item8-span1" 18px
+    "NBC-logo youtube-main-end-item8-span2" 15px/
+    50px 200px;
+    min-width: max-content;
+    justify-content: start;
+  gap: 2px;
+}
+.Biden {
+  grid-area: Biden;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+.NBC-logo {
+  grid-area: NBC-Logo;
+  width: 100%;
+  
+  padding-top: 1.5rem;
+  border-radius: 100%;
+}
+.youtube-main-end-item8-h5 {
+  grid-area: youtube-main-end-item8-h5;
+  
+  position: relative;
+  top: 1.9rem;
+  width: 200px;
+  justify-content: start;
+  align-content: end;
+  overflow: hidden;
+}
+
+.youtube-main-end-item8-span1 {
+  grid-area: youtube-main-end-item8-span1;
+  height: 60%;
+  font-size: 13px;
+  padding-top: 4px;
+  align-content: start;
+  position: relative;
+  top: 5px;
+}
+.youtube-main-end-item8-span1 svg {
+  height: 100%;
+}
+.youtube-main-end-item8-span2 {
+  grid-area: youtube-main-end-item8-span2;
+  font-size: 11px;
+  position: relative;
+  top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
