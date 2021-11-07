@@ -32,7 +32,7 @@
 
 hr{
   height: 1px;
- 
+
   
 }
 
@@ -45,7 +45,7 @@ hr{
     justify-items: center;
     padding: 10px 0;
     margin-left: 5px;
-    background-color: #dce1e9 ;
+    
   }
   .youtube-top-bar-start {
     justify-items: start;
@@ -115,7 +115,7 @@ width: 70px;
 /* padding: 10px 0; */
 list-style: none;
 /* justify-content: center; */
-background-color: #dce1e9;
+
 
 }
 .youtube-guider-bar li{width: 100%;list-style: none;/* justify-content: center; */
@@ -163,7 +163,7 @@ font-family: sans-serif;
   height: 60px;
   border-top: solid #adb5bd 1px;
   margin-left: 5px;
-  background-color: #dce1e9;
+  
 }
 .youtube-chips-bar ul{
   list-style: none;
@@ -206,6 +206,10 @@ font-family: sans-serif;
   padding: 1rem 2rem;
   gap: 50px;
   background-color: #dce1e9;
+}
+.youtube-main a{
+  text-decoration: none;
+  color: unset;
 }
 .youtube-main-start {
   display: grid;
