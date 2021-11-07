@@ -9,7 +9,7 @@
     grid-template-rows: minmax(40px, 60px) 1fr;
 }
 .top-bar{
-    background-color: lightgreen;
+    
     display: grid;
     grid-template-columns: 150px 1fr 300px;
     grid-gap: 10px;
@@ -72,7 +72,7 @@
 }
 
 .main *{
-    outline: solid black 1px;
+    
 }
 
 .main{
@@ -82,7 +82,7 @@
     place-content: center;
 }
 .main-right{
-    background-color: #6fb7d6;
+    
     display: grid;
     grid-template-rows: 80px 1fr ;
     place-content: center space-between;
@@ -181,11 +181,12 @@
 
   .main-left{
      margin-top: 2rem;
-     margin-left: 2rem;
+     margin-left: 8rem;
      display: grid;
-     grid-template-rows: 1fr auto;
+     /* grid-template-rows: 1fr auto; */
      grid-gap: 1rem;
-     place-content: center;
+     
+     place-content: start;
      width: auto;
      
   }
@@ -198,18 +199,21 @@
       
   }
   .main-video-block h1 iframe{
-      
+      display: grid;
+      place-content: center;
   }
   .main-video-block h1{
-      font-size: 30px;
-      width: 95%;
-      padding-top: 1rem;
+      display: grid;
+      place-content: start;
+      font-size: 28px;
+      min-width: max-content;
+      margin: 1rem 0;
   }
   .main-icons{
       display: grid;
       grid-auto-flow: column;
       
-
+    
      
       margin-top: 1rem;
   }
@@ -228,22 +232,35 @@
   .threepoints{
       display: grid;
       grid-auto-flow: column;
-      place-content: center;
+      align-items: center;
+      
       gap: 1rem;
       min-width: max-content;
       text-decoration: none;
       color: unset;
       font-weight: bold;
       font-size: 20px;
+      
   }
+  .like span,
+  .dislike span,
+  .share span,
+  .save span,
+  .threepoints span{
+      display: grid;
+      justify-content: end;
+     
+  }
+  
+
+
   .like img,
   .dislike img,
   .share img,
-
   .save img,
   .threepoints img{
       place-content: center;
-      
+      width: 35px;
   }
   .channel-div{
       display: grid;
@@ -263,6 +280,8 @@
     grid-template-columns: minmax(auto-fit) auto;
     place-content: start;
     gap: 1rem;
+    text-decoration: none;
+    color: unset;
 }
 .NBS-logo img{
     border-radius: 100px;
@@ -278,8 +297,40 @@
     grid-auto-flow: column;
     place-content: start;
     grid-template-columns: repeat(2, auto);
+    font-size: 19px;
+    
 }
 .NBS-news img{
     width: 15px;
-    
 }   
+.subscribe{
+    display: grid;
+    grid-template-columns: 200px;
+    place-content: center;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    height: 60px;
+    margin-top: 13px;
+    border-radius: 5px;
+}
+.subscribe h5{
+    display: grid;
+    place-content: center;
+    font-size: 20px;
+}
+.bottom-channel-div{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    margin-top: 1rem;
+    gap: 1rem;
+    margin-left: 6.4rem;
+}
+.bottom-channel-div h5{
+    font-size: 17px;
+}
+    .bottom-channel-div a{
+        font-size: 15px;
+        text-decoration: none;
+        color: unset;
+    }
